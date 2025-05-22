@@ -19,7 +19,7 @@ O objetivo era desenvolver uma UI que permitisse:
 
 ---
 
-## 🛠 Tecnologias que usei
+## 🛠 Tecnologias 
 
 - **React** – biblioteca base
 - **TypeScript** – para tipagem estática e organização
