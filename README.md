@@ -19,12 +19,11 @@ O objetivo era desenvolver uma UI que permitisse:
 
 ---
 
-## 🛠 Tecnologias que usei
+## 🛠 Tecnologias 
 
 - **React** – biblioteca base
 - **TypeScript** – para tipagem estática e organização
 - **Styled Components** – para estilização com suporte a tema
-- **Responsividade com CSS Grid e media queries**
 - **React Icons** – para os ícones
 - **Context API** – para controlar o tema da aplicação
 - **Vite** – para estrutura rápida de build e desenvolvimento
