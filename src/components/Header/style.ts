@@ -8,7 +8,7 @@ export const Container = styled.div<HeaderProps>`
   background: ${({ theme }) =>
     theme === "dark" ? "var(--Neutral-800)" : "var( --Neutral-0)"};
   width: 100%;
-  max-width: 83rem;
+  max-width: 77rem;
   height: 4rem;
   display: flex;
   align-items: center;

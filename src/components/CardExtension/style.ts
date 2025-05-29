@@ -7,7 +7,7 @@ interface CardExtenProp {
 export const Container = styled.div<CardExtenProp>`
   background: ${({ theme }) =>
     theme === "dark" ? "var( --Neutral-800)" : "var( --Neutral-0)"};
-  width: 22rem;
+  width: 25rem;
   height: 12rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -20,6 +20,7 @@ export const Container = styled.div<CardExtenProp>`
 
 export const HeaderText = styled.div`
   display: flex;
+
   div {
     margin-top: 1.3rem;
   }
@@ -38,10 +39,12 @@ export const Title = styled.h3<CardExtenProp>`
 
 export const Text = styled.p<CardExtenProp>`
   margin-top: 0.3rem;
-  margin-bottom: 1rem;
   color: ${({ theme }) =>
     theme === "dark" ? "var(--Neutral-0)" : "var( --Neutral-700)"};
-  width: 15rem;
+  max-width: 20rem;
+  width: auto;
+
+  word-break: break-word;
   @media (max-width: 480px) {
     margin: 0;
   }
@@ -52,15 +55,15 @@ export const ButtonRemove = styled.button<CardExtenProp>`
     ${({ theme }) =>
       theme === "dark" ? "var(--Neutral-0)" : "var(--Neutral-800)"};
   outline: none;
-  width: 5rem;
-  height: 0.5rem;
   border-radius: 1rem;
-  margin-left: 1rem;
+  margin-left: 0.9rem;
   font-size: 0.9rem;
   background-color: transparent;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+
   color: ${({ theme }) =>
     theme === "dark" ? "var(--Neutral-0)" : "var( --Neutral-800)"};
 
@@ -79,8 +82,10 @@ export const ButtonRemove = styled.button<CardExtenProp>`
 
 export const ControlButtons = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
+  align-items: flex-end;
+  margin-top: 2.5rem;
   @media (max-width: 480px) {
     margin-top: 1.5rem;
   }

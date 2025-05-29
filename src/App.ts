@@ -23,6 +23,9 @@ export const Background = styled.div<BackgroundProps>`
 `;
 
 export const Main = styled.div`
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
   display: grid;
   justify-content: center;
   place-items: center;
@@ -80,8 +83,10 @@ export const TagButtons = styled.button<BackgroundProps>`
 export const FilterControl = styled.div<BackgroundProps>`
   display: flex;
   justify-content: space-between;
-  padding: 3rem 4.3rem;
-
+  padding: 3rem 0;
+  width: 100%;
+  max-width: 77rem;
+  margin: 0 auto;
   > div {
     display: flex;
     gap: 0.5rem;
