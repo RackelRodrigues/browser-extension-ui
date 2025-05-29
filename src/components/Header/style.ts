@@ -51,7 +51,7 @@ export const ButtonTheme = styled.button<HeaderProps>`
   color: ${({ theme }) =>
     theme === "dark" ? "var( --Neutral-0)" : "var( --Neutral-800)"};
   background: ${({ theme }) =>
-    theme === "dark" ? "var(--Neutral-600)" : "var( --Neutral-0)"};
+    theme === "dark" ? "var(--Neutral-600)" : "var( --Neutral-100)"};
 
   @media (max-width: 480px) {
     width: 1.2rem;
