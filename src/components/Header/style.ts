@@ -4,7 +4,7 @@ interface HeaderProps {
   theme?: "dark" | "light";
 }
 
-export const Container = styled.div<HeaderProps>`
+export const Container = styled.header<HeaderProps>`
   background: ${({ theme }) =>
     theme === "dark" ? "var(--Neutral-800)" : "var( --Neutral-0)"};
   width: 100%;
@@ -16,14 +16,15 @@ export const Container = styled.div<HeaderProps>`
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
-  @media (max-width: 770px) {
+
+  @media screen and (min-width: 610px) and (max-width: 1023px) {
     max-width: 46rem;
     width: 100%;
     height: 3rem;
     border-radius: 0.5rem;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 609px) {
     max-width: 21rem;
     width: 100%;
     height: 2.5rem;

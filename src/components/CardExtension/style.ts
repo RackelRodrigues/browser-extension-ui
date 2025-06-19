@@ -7,22 +7,36 @@ interface CardExtenProp {
 export const Container = styled.div<CardExtenProp>`
   background: ${({ theme }) =>
     theme === "dark" ? "var( --Neutral-800)" : "var( --Neutral-0)"};
-  width: 25rem;
-  height: 12rem;
+
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
-  @media (max-width: 480px) {
-    width: 21rem;
-    height: 10rem;
+  @media screen and (min-width: 610px) and (max-width: 1023px) {
+    max-width: 21rem;
+  }
+
+  @media (max-width: 609px) {
+    padding: 0 0;
+    max-width: 21rem;
   }
 `;
 
 export const HeaderText = styled.div`
   display: flex;
-
+  flex-direction: row;
   div {
     margin-top: 1.3rem;
+  }
+
+  @media screen and (min-width: 610px) and (max-width: 1025px) {
+  }
+
+  @media (max-width: 609px) {
+    width: 100%;
+    padding: 0 0;
   }
 `;
 
@@ -38,15 +52,15 @@ export const Title = styled.h3<CardExtenProp>`
 `;
 
 export const Text = styled.p<CardExtenProp>`
-  margin-top: 0.3rem;
   color: ${({ theme }) =>
     theme === "dark" ? "var(--Neutral-0)" : "var( --Neutral-700)"};
-  max-width: 20rem;
+  max-width: 18rem;
   width: auto;
 
   word-break: break-word;
-  @media (max-width: 480px) {
-    margin: 0;
+
+  @media screen and (min-width: 610px) and (max-width: 1025px) {
+    max-width: 16rem;
   }
 `;
 
@@ -86,7 +100,13 @@ export const ControlButtons = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 2.5rem;
-  @media (max-width: 480px) {
-    margin-top: 1.5rem;
+
+  @media screen and (min-width: 610px) and (max-width: 1025px) {
+    margin-top: 0.7rem;
+  }
+
+  @media (max-width: 609px) {
+    margin-top: 0;
+    padding: 1rem 0;
   }
 `;

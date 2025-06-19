@@ -7,16 +7,11 @@ interface BackgroundProps {
 export const Background = styled.div<BackgroundProps>`
   width: 100%;
   min-height: 100vh;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
   background: ${({ theme }) =>
     theme === "dark" ? "var(--dark-gradient)" : "var(--light-gradient)"};
 
-  @media (max-width: 770px) {
-    width: 100%;
-    padding: 2rem 0;
-  }
-
-  @media (max-width: 480px) {
+  @media (max-width: 609px) {
     width: 100%;
     padding: 2rem 0;
   }
@@ -24,20 +19,22 @@ export const Background = styled.div<BackgroundProps>`
 
 export const Main = styled.div`
   width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
+  max-width: 78rem;
   display: grid;
-  justify-content: center;
-  place-items: center;
+  place-content: center;
+  justify-self: center;
+
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 1rem;
-  column-gap: 1rem;
-  @media (max-width: 768px) {
+  gap: 1rem;
+
+  @media screen and (min-width: 610px) and (max-width: 1023px) {
+    padding: 0 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 609px) {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 `;
 
@@ -92,11 +89,11 @@ export const FilterControl = styled.div<BackgroundProps>`
     gap: 0.5rem;
   }
 
-  @media (max-width: 770px) {
-    padding: 2rem 1rem;
+  @media screen and (min-width: 610px) and (max-width: 1023px) {
+    padding: 2rem 2.6rem;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 609px) {
     display: block;
     margin: 0 auto;
     padding: 0;

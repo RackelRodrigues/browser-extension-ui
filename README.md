@@ -19,7 +19,7 @@ O objetivo era desenvolver uma UI que permitisse:
 
 ---
 
-## 🛠 Tecnologias 
+## 🛠 Tecnologias
 
 - **React** – biblioteca base
 - **TypeScript** – para tipagem estática e organização
@@ -27,3 +27,7 @@ O objetivo era desenvolver uma UI que permitisse:
 - **React Icons** – para os ícones
 - **Context API** – para controlar o tema da aplicação
 - **Vite** – para estrutura rápida de build e desenvolvimento
+
+## 📸 Demonstração
+
+![Image](https://github.com/user-attachments/assets/9b7e40ad-5d88-4527-ac9c-955fa8d12a81)

@@ -19,6 +19,8 @@ function App() {
     setChangeTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
+  const tags = ["All", "Active", "Inactive"];
+
   const handleFilter = (tag: string) => {
     if (tag === "All") {
       setDataServer(data);
@@ -35,8 +37,6 @@ function App() {
     const updated = dataServer.filter((item) => item.name !== name);
     setDataServer(updated);
   };
-
-  const tags = ["All", "Active", "Inactive"];
 
   return (
     <>
