@@ -8,9 +8,7 @@ interface Props {
 
 const Header: React.FC<Props> = ({ onClick, theme }) => {
   const logoSrc =
-    theme === "dark"
-      ? "src/assets/images/logo-white.svg"
-      : "src/assets/images/logo.svg";
+    theme === "dark" ? "images/logo-white.svg" : "images/logo.svg";
   return (
     <Container theme={theme}>
       <Logo src={logoSrc} alt="Foto da logo" />
