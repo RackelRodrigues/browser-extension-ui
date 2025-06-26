@@ -10,10 +10,13 @@ export const Background = styled.div<BackgroundProps>`
   padding: 2rem 0;
   background: ${({ theme }) =>
     theme === "dark" ? "var(--dark-gradient)" : "var(--light-gradient)"};
+  @media screen and (min-width: 1023px) and (max-width: 1443px) {
+    padding: 2rem 2rem;
+  }
 
-  @media (max-width: 609px) {
+  @media screen and (max-width: 609px) {
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
 `;
 
@@ -23,18 +26,19 @@ export const Main = styled.div`
   display: grid;
   place-content: center;
   justify-self: center;
-
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
-  @media screen and (min-width: 610px) and (max-width: 1023px) {
+  @media screen and (min-width: 610px) and (max-width: 1022px) {
     padding: 0 1rem;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 
   @media (max-width: 609px) {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    place-items: center;
   }
 `;
 

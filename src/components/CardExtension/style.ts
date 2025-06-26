@@ -31,9 +31,6 @@ export const HeaderText = styled.div`
     margin-top: 1.3rem;
   }
 
-  @media screen and (min-width: 610px) and (max-width: 1025px) {
-  }
-
   @media (max-width: 609px) {
     width: 100%;
     padding: 0 0;

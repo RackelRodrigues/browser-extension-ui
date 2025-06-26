@@ -1,4 +1,4 @@
-import { ToggleSwitchWrpper, Input, Span } from "./style";
+import { ToggleSwitchWrapper, Input, Span } from "./style";
 import { useState } from "react";
 
 const ToggleSwitch = () => {
@@ -6,10 +6,10 @@ const ToggleSwitch = () => {
 
   return (
     <>
-      <ToggleSwitchWrpper $checked={checked}>
+      <ToggleSwitchWrapper $checked={checked}>
         <Input type="checkbox" onChange={() => setChecked(!checked)} />
         <Span />
-      </ToggleSwitchWrpper>
+      </ToggleSwitchWrapper>
     </>
   );
 };

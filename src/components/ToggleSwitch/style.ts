@@ -2,7 +2,7 @@ import styled from "styled-components";
 interface WrapperProps {
   $checked: boolean;
 }
-export const ToggleSwitchWrpper = styled.label<WrapperProps>`
+export const ToggleSwitchWrapper = styled.label<WrapperProps>`
   background: ${({ $checked }) =>
     $checked ? "var( --red-500)" : "var(--Neutral-300)"};
   width: 2.5rem;
